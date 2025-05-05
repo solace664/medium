@@ -1,0 +1,27 @@
+.contain{
+    display: grid;
+    grid-template-columns: repeat(10, 15%);
+    max-width: 100%;
+    gap: 30px;
+    top: 2px;
+    position: sticky;
+    overflow-x: scroll;
+}
+/* .contain::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+} */
+
+.contain::-webkit-scrollbar{
+    display: none;
+}
+
+.contain h1{
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
